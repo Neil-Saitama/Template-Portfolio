@@ -1,0 +1,7 @@
+@media(max-width:768px){
+	.navbar.navbar-default .collapse,
+	.dropdown.mobile {
+		display:block !important;
+	}
+	
+}

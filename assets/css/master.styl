@@ -1,0 +1,401 @@
+@import '_settings'
+
+normalize-css()
+base()
+
+body
+	background:#343434;
+
+body a,h1,h2,h3,h4,blockquote,li,table
+	font-family:"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+body p
+	font-size:16px;
+	font-family:"Georgia";
+	color:#777;
+	line-height:1.5em;
+
+.head-ttle 
+	font-size:40px;
+	font-weight:600;
+	color:#343434;
+	margin: 10px !important;
+
+.sub-ttle
+	font-family: "Georgia", Helvetica, Arial, sans-serif !important;
+	font-style: italic;
+
+/*header menu*/
+
+.navbar-brand
+	color: #fed136 !important;
+	font-family: "Monotype Corsiva", Helvetica, Arial, cursive !important;
+	font-size: 3em;
+	-webkit-transition:all 300ms ease-out;
+
+.navbar
+	position:absolute !important;
+	top:0;
+	margin-bottom:0px !important;
+	width:100%;
+	margin: auto;
+	background:transparent;
+	border:none;
+	padding:25px 0px 10px;
+	-webkit-transition:all 300ms ease-out;
+	box-shadow:0px 0px 0px;
+	z-index:999;
+
+.navbar a
+	text-shadow:none !important;
+
+.navbar-right a
+	font-size:14px;
+	font-family:"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow:none !important;
+	color:#fff !important;
+	box-shadow:0px !important;
+	border:none !important;
+	padding:14px 20px !important;
+
+.navbar.fixed
+	position:fixed !important;
+	width:100%;
+	margin:auto;
+	background:#222;
+	padding:10px 0px 10px;
+
+.navbar.fixed .navbar-brand
+	font-size: 2em;
+
+
+/*slider home*/
+
+.slider
+	background:url(../img/header-bg.jpg) !important;
+	padding:240px 0px;
+	text-align:center;
+
+.slider h3
+	font-family: "Lucida Handwriting", Helvetica, Arial, sans-serif !important;
+	color:#fff;
+	font-size:39px;
+.slider h1
+	font-family: "Helvetica", Arial, sans-serif !important;
+	color:#fff;
+	font-size:69px;
+	font-weight:700;
+	text-shadow:0px 2px 5px #111;
+.slider a
+	background:#fec503;
+	font-size:18px;
+	color:#fff;
+	font-weight:600;
+	padding: 20px 40px;
+	border-radius:6px;
+	border-bottom:solid 2px #c79e11;
+.slider a:hover
+	text-decoration:none;
+
+
+/*services*/
+
+.services
+	background:#fff;
+	padding:90px 0px 80px;
+	text-align:center;
+
+.services-list
+	padding:90px 0px 90px;
+
+.services-list p
+	font-size:16px;
+	font-family:"Georgia";
+	color:#777;
+	line-height:1.5em;
+
+.serv_title
+	font-size:18px !important;
+	font-weight:600;
+
+
+/*portfolio*/
+
+#portfolio
+	text-align:center;
+	padding:50px 0px 80px;
+
+.bg-light-gray
+	background:#f9f9f9;
+
+#portfolio .portfolio
+	padding:60px 0px 0px;
+
+#portfolio .portfolio-caption
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	text-align: center;
+	padding: 25px;
+
+#portfolio .portfolio img
+	width: 100%;
+
+.portfolio-caption .text-muted
+	font-style:italic;
+	font-size: 18px;
+
+.portfolio-caption h4
+	font-weight: bold;
+
+.portfolio-item div
+	position: relative;
+
+.portfolio-item div .portfolio-hover
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: red;
+	padding: 100px 0px;
+	opacity:0;
+	-webkit-transition:all ease-out 600ms;
+	-o-transition:all ease-out 600ms;
+	-moz-transition:all ease-out 600ms;
+	transition:all ease-out 600ms;
+
+.portfolio-item
+	margin-bottom:50px;
+
+.portfolio-item div:hover .portfolio-hover
+	background:rgba(254, 209, 54, 0.9);
+	opacity:1;
+
+.portfolio-item div .portfolio-hover span
+	font-size: 50px;
+	color:#fff;
+
+
+/*about us*/
+#about
+	padding:50px 0px 80px;
+
+#about .header
+	padding:50px 0px 80px;
+
+.timeline
+	position:relative;
+	width:100%;
+
+.timeline:before
+	top: 0;
+	bottom: 0;
+	left:50% !important;
+	right:0 !important;
+	position: absolute;
+	content: "";
+	width: 2px;
+	background-color: #f1f1f1; 
+	margin-left: -1.5px;
+
+.timeline
+	list-style: none;
+	padding: 0;
+	position: relative;
+
+.timeline:before 
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	content: "";
+	width: 2px;
+	background-color: #f1f1f1;
+	left: 40px;
+	margin-left: -1.5px;
+.timeline > li 
+	margin-bottom: 50px;
+	position: relative;
+	min-height: 50px;
+.timeline > li:before,
+.timeline > li:after 
+	content: " ";
+	display: table;
+.timeline > li:after 
+	clear: both;
+.timeline > li .timeline-panel 
+	width: 100%;
+	float: right;
+	padding: 0 20px 0 100px;
+	position: relative;
+	text-align: left;
+.timeline > li .timeline-panel:before 
+	border-left-width: 0;
+	border-right-width: 15px;
+	left: -15px;
+	right: auto;
+.timeline > li .timeline-panel:after 
+	border-left-width: 0;
+	border-right-width: 14px;
+	left: -14px;
+	right: auto;
+.timeline > li .timeline-image 
+	left: 0;
+	margin-left: 0;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	z-index: 100;
+	background-color: #fed136;
+	color: white;
+	border-radius: 100%;
+	border: 7px solid #f1f1f1;
+	text-align: center;
+.timeline > li .timeline-image h4 
+	font-size: 10px;
+	margin-top: 12px;
+	line-height: 14px;
+.timeline > li.timeline-inverted > .timeline-panel 
+	float: right;
+	text-align: left;
+	padding: 0 20px 0 100px;
+.timeline > li.timeline-inverted > .timeline-panel:before 
+	border-left-width: 0;
+	border-right-width: 15px;
+	left: -15px;
+	right: auto;
+.timeline > li.timeline-inverted > .timeline-panel:after 
+	border-left-width: 0;
+	border-right-width: 14px;
+	left: -14px;
+	right: auto;
+.timeline > li:last-child 
+	margin-bottom: 0;
+.timeline .timeline-heading h4 
+	margin-top: 0;
+	color: inherit;
+.timeline .timeline-heading h4.subheading 
+	text-transform: none;
+.timeline .timeline-body > p,
+.timeline .timeline-body > ul 
+	margin-bottom: 0; 
+
+@media screen and (min-width: 768px)
+	.timeline:before
+		left: 50%;
+
+	.timeline > li  
+		margin-bottom: 100px;
+		min-height: 100px;
+
+	.timeline > li .timeline-panel
+		width: 41%;
+		float: left;
+		padding: 0 20px 20px 30px;
+		text-align: right;
+
+	.timeline > li .timeline-image 
+		width: 100px;
+		height: 100px;
+		left: 50%;
+		margin-left: -50px;
+
+	.timeline > li .timeline-image h4 
+		font-size: 13px;
+		margin-top: 16px;
+		line-height: 18px;
+
+	.timeline > li.timeline-inverted > .timeline-panel 
+		float: right;
+		text-align: left;
+		padding: 0 30px 20px 20px;
+
+
+@media screen and (min-width: 992px)
+	.timeline > li
+		min-height: 150px;
+
+	.timeline > li .timeline-panel 
+		padding: 0 20px 20px;
+
+	.timeline > li .timeline-image 
+		width: 150px;
+		height: 150px;
+		margin-left: -75px;
+
+	.timeline > li .timeline-image h4 
+		font-size: 18px;
+		margin-top: 30px;
+		line-height: 26px;
+
+	.timeline > li.timeline-inverted > .timeline-panel 
+		padding: 0 20px 20px;
+
+
+@media (min-width: 1200px) 
+	.timeline > li 
+		min-height: 170px;
+
+	.timeline > li .timeline-panel
+		padding: 0 20px 20px 100px;
+
+	.timeline > li .timeline-image
+		width: 170px;
+		height: 170px;
+		margin-left: -85px;
+
+	.timeline > li .timeline-image h4 
+		margin-top: 40px;
+
+	.timeline > li.timeline-inverted > .timeline-panel 
+		padding: 0 100px 20px 20px;
+
+/*team*/
+
+#team
+	padding:50px 0px 80px;
+
+#team .header
+	padding:50px 0px 80px;
+
+.team-member
+	text-align: center;
+	margin-bottom: 50px;
+
+.team-member img
+	margin: 0 auto;
+	border: 7px solid white;
+
+.team-member h4 
+	margin-top: 25px;
+	margin-bottom: 0;
+	text-transform: none;
+
+.team-member p 
+	margin-top: 0;
+
+ul.social-buttons
+	margin-bottom: 0;
+
+ul.social-buttons li a
+	display: block;
+	background-color: #222222;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	font-size: 20px;
+	line-height: 40px;
+	color: white;
+	outline: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active
+	background-color: #fed136;
+
+/*clients*/
+
+aside.clients img
+	margin: 50px auto;
