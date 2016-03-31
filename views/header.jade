@@ -20,25 +20,29 @@ head
 	title= _path
 	
 	!= css()
-
-	nav(class="navbar navbar-default")
-		div(class="container-fluid container")
-			div(class="navbar-header")
-				button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+	<!-- Navigation -->
+	
+	nav(class="navbar navbar-default navbar-fixed-top")
+		div(class="container")
+			div(class="navbar-header page-scroll")
+				button(type="button",class="navbar-toggle",data-toggle="collapse",data-target="#bs-example-navbar-collapse-1")
 					span(class="sr-only") Toggle navigation
-					span(class="icon-bar") 
-					span(class="icon-bar") 
-					span(class="icon-bar") 
-				a(class="navbar-brand", href="#") Start Bootstrap
+					span(class="icon-bar")
+					span(class="icon-bar")
+					span(class="icon-bar")
+				a(class="navbar-brand page-scroll", href="#page-top") Start Bootstrap
+
 			div(class="collapse navbar-collapse", id="bs-example-navbar-collapse-1")
 				ul(class="nav navbar-nav navbar-right")
+					li(class="hidden")
+						a(href="#page-top")
 					li
-						a(href="#") SERVICES
+						a(class="page-scroll", href="#services") Services
 					li
-						a(href="#") PORTFOLIO
+						a(class="page-scroll", href="#portfolio") Portfolio
 					li
-						a(href="#") ABOUT
+						a(class="page-scroll", href="#about") About
 					li
-						a(href="#") TEAM
+						a(class="page-scroll" href="#team") Team
 					li
-						a(href="#") CONTACT
+						a(class="page-scroll" href="#contact") Contact
